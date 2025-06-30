@@ -122,20 +122,20 @@ namespace CSharpAssesment
         public static void Main(string[] args)
         {
             string result = ReverseString("Hello Dev");
-            Console.WriteLine(result); // Output: dlroW olleH
+            Console.WriteLine(result); // Output: veD olleH
         }
 
         public static string ReverseString(string input)
         {
-           // Create a new character array to hold reversed characters with same size
-			char[] reverse = new char[input.Length];
-			// Fill the new array with characters from the original string in reverse order
-			for( int i =0 ;i<input.Length; i++)
-			{
-				reverse[i] =input[input.Length - 1 -i];
-			}
-			 // Convert the reversed character array back to a string and return
-			return new string(reverse);
+		// Create a new character array to hold reversed characters with same size
+		char[] reverse = new char[input.Length];
+		// Fill the new array with characters from the original string in reverse order
+		for( int i =0 ;i<input.Length; i++)
+		{
+		   reverse[i] =input[input.Length - 1 -i];
+		}
+		// Convert the reversed character array back to a string and return
+		return new string(reverse);
         }
     }
 }
