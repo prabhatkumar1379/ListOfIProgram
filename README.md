@@ -112,7 +112,7 @@ namespace CSharpAssesment
 }
 
 ```
-# 2.1 Don’t use any built-in reverse method.
+# 2.1 w.a.p to Reverse string? do't use any built-in reverse method.
 ```
 using System;
 namespace CSharpAssesment
