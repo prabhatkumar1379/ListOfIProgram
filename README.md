@@ -172,7 +172,6 @@ namespace CSharpAssesment
 # 3 W.A.P to check string are palindrom or not?
 ```
 using System;
-using System.Text;
 namespace CSharpAssesment
 {
     public class Program
@@ -185,17 +184,17 @@ namespace CSharpAssesment
 
         public static void Palindrom(string originalstr)
         {
-          char [] chars = originalstr.ToCharArray();
-			Array.Reverse(chars);
-			string reversestring = new string(chars);
-			if(reversestring.Equals(originalstr))
-			{
-			Console.WriteLine($"originalstr:{originalstr} and Revesrse string {reversestring} are same i.e its  palinddrom");
-			}
-			else
-			{
-				Console.WriteLine($"originalstr:{originalstr} and Revesrse string: {reversestring} are not same i.e its not palinddrom");
-			}
+          	char [] chars = originalstr.ToCharArray();
+		Array.Reverse(chars);
+		string reversestring = new string(chars);
+		if(reversestring.Equals(originalstr))
+		{
+		Console.WriteLine($"originalstr:{originalstr} and Revesrse string {reversestring} are same i.e its  palinddrom");
+		}
+		else
+		{
+			Console.WriteLine($"originalstr:{originalstr} and Revesrse string: {reversestring} are not same i.e its not palinddrom");
+		}
 			
         }
     }
