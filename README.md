@@ -76,3 +76,39 @@ namespace CSharpAssesment
 }
  
 ```
+# 2.w.a.p to Reverse string?
+
+```
+using System;
+using System.Linq; // Required only if you use LINQ-based solution
+
+namespace CSharpAssesment
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            string result = ReverseString("Hello World");
+            Console.WriteLine(result); // Output: dlroW olleH
+        }
+
+        public static string ReverseString(string input)
+        {
+            // ✅ Solution 1 (using LINQ)
+            // return new string(input.Reverse().ToArray()); // Simple and readable, requires System.Linq
+
+            // ✅ Solution 2 (without LINQ, using Array.Reverse)
+            
+            // Step 1: Convert string to character array
+            char[] ch = input.ToCharArray();
+
+            // Step 2: Reverse the character array in-place
+            Array.Reverse(ch);
+
+            // Step 3: Convert the reversed character array back to string and return
+            return new string(ch);
+        }
+    }
+}
+
+```
