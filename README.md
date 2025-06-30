@@ -35,7 +35,8 @@ Gang of Four design patterns and is categorized under creational design patterns
 
 # 1.FizzBuzz
 
-'''
+
+```csharp
 using System;
 namespace CSharpAssesment
 {
@@ -74,4 +75,4 @@ namespace CSharpAssesment
 	}
 }
  
-'''
+```
