@@ -78,7 +78,7 @@ namespace CSharpAssesment
 ```
 # 2.w.a.p to Reverse string?
 
-```
+```markdown
 using System;
 using System.Linq; // Required only if you use LINQ-based solution
 
@@ -111,4 +111,4 @@ namespace CSharpAssesment
     }
 }
 
-```
+```csharp
