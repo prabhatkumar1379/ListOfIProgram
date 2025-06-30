@@ -141,3 +141,31 @@ namespace CSharpAssesment
 }
 
 ```
+# 2.2 w.a.p to Reverse string? Use StringBuilder and append in reverse.
+```
+using System;
+using System.Text;
+namespace CSharpAssesment
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            string result = ReverseString("Hello Dev");
+            Console.WriteLine(result); // Output: dlroW olleH
+        }
+
+        public static string ReverseString(string input)
+        {
+           StringBuilder  sb = new StringBuilder();
+			// Loop backward through the input string
+			for(int i = input.Length -1; i>=0 ; i--)
+			{
+			 sb.Append(input[i]);
+			}
+			return sb.ToString();
+        }
+    }
+}
+
+```
