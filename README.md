@@ -94,10 +94,10 @@ namespace CSharpAssesment
 
         public static string ReverseString(string input)
         {
-            // ✅ Solution 1 (using LINQ)
+            // Solution 1 (using LINQ)
             // return new string(input.Reverse().ToArray()); // Simple and readable, requires System.Linq
 
-            // ✅ Solution 2 (without LINQ, using Array.Reverse)
+            //  Solution 2 (without LINQ, using Array.Reverse)
             
             // Step 1: Convert string to character array
             char[] ch = input.ToCharArray();
