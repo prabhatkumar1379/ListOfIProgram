@@ -158,12 +158,12 @@ namespace CSharpAssesment
         public static string ReverseString(string input)
         {
            StringBuilder  sb = new StringBuilder();
-			// Loop backward through the input string
-			for(int i = input.Length -1; i>=0 ; i--)
-			{
-			 sb.Append(input[i]);
-			}
-			return sb.ToString();
+		// Loop backward through the input string
+		for(int i = input.Length -1; i>=0 ; i--)
+		{
+		sb.Append(input[i]);
+		}
+		return sb.ToString();
         }
     }
 }
