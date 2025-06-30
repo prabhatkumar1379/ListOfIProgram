@@ -169,35 +169,42 @@ namespace CSharpAssesment
 }
 
 ```
-# 3 W.A.P to check string are palindrom or not?
+# 3 W.A.P to Check if a Given String is a Palindrome
 ```
 using System;
+
 namespace CSharpAssesment
 {
     public class Program
     {
         public static void Main(string[] args)
         {
-             Palindrom("absa");
-         
+            Palindrome("absa");
+            Palindrome("madam");
         }
 
-        public static void Palindrom(string originalstr)
+        public static void Palindrome(string originalStr)
         {
-          	char [] chars = originalstr.ToCharArray();
-		Array.Reverse(chars);
-		string reversestring = new string(chars);
-		if(reversestring.Equals(originalstr))
-		{
-		Console.WriteLine($"originalstr:{originalstr} and Revesrse string {reversestring} are same i.e its  palinddrom");
-		}
-		else
-		{
-			Console.WriteLine($"originalstr:{originalstr} and Revesrse string: {reversestring} are not same i.e its not palinddrom");
-		}
-			
+            // Convert to lowercase to make the comparison case-insensitive (optional)
+            originalStr = originalStr.ToLower();
+
+            // Convert the string to a character array and reverse it
+            char[] chars = originalStr.ToCharArray();
+            Array.Reverse(chars);
+            string reversedStr = new string(chars);
+
+            // Check if the reversed string matches the original
+            if (reversedStr == originalStr)
+            {
+                Console.WriteLine($"Original: {originalStr} | Reversed: {reversedStr} → ✅ It's a palindrome.");
+            }
+            else
+            {
+                Console.WriteLine($"Original: {originalStr} | Reversed: {reversedStr} → ❌ Not a palindrome.");
+            }
         }
     }
 }
+
 
 ```
